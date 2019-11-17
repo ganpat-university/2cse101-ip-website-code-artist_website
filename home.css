@@ -1,0 +1,280 @@
+@font-face {
+  font-family: head;
+  src: url(Aquamarine.otf);
+}
+
+@font-face {
+  font-family: logo;
+  src: url(Hansville.otf);
+}
+
+.navbar{
+    border:none;
+    border-width:1px 0;
+    list-style:none;
+    margin:0 auto;
+    padding:0;
+    text-align:center;
+
+	
+}
+.navbar li{
+    display:inline;
+
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.navbar a{
+    display:inline-block;
+    padding:10px;
+	text-decoration:none;
+}
+
+.header
+{
+	text-align: center;
+	margin-top: 5%;
+}
+
+.header font
+{
+	font-family: head;
+	font-size: 400%;
+}
+
+.navbar font:hover {
+  color:#5B5B5B;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.menu
+{
+	color:#7A7A7A;
+	font-family: logo;
+	font-size: 120%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  text-align: center;
+    margin-left: auto;
+  margin-right: auto;
+}
+
+
+.column {
+  flex: 50%;
+  padding: 0 4px;
+
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+
+ /* Style the Image Used to Trigger the Modal */
+.myImg {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.myImg:hover {opacity: 0.7;}
+
+.footer
+{
+	margin-top: 5%;
+	text-align: center;
+}
+
+.foot
+{
+	font-family: logo;
+	color:#5B5B5B;
+}
+
+.elinks
+{
+	height: 2.5%;
+	width:2%;
+	margin-top:0.5%;
+}
+
+.pot
+{
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+}
+
+.abt
+{
+	text-align: center;
+	font-family: logo;
+	font-size:160%;
+}
+
+.para
+{
+
+	text-align: center;
+	font-family: logo;
+	color: #5B5B5B;
+}
+.txt1
+{
+	padding-top: 3%;
+}
+.txt 
+{	
+	padding-top: 2%;
+	text-align: center;
+	padding-left: 25%;
+	padding-right: 25%;
+}
+
+.cont
+{
+	display: block;
+		display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+}
+
+.button {
+  background-color: #282828;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 100%;
+  font-family:logo;
+  height:5%;
+  width: 50%;
+  cursor: pointer;
+    transition: 0.3s;
+}
+
+.inpt
+{
+	height:5%;
+  width: 50%;
+   border: solid;
+   border-color: #D6D6D6;
+   border-width:thin;
+   background-color: #D6D6D6;
+   margin-bottom:1%;
+   font-family: logo;
+}
+
+.inpt2
+{
+	font-family: logo;
+	height:25%;
+  width: 50%;
+   border: solid;
+   border-color: #D6D6D6;
+   	 border-width:thin;
+   background-color:#D6D6D6;
+      margin-bottom:1%;
+	 color: #999999
+
+}
+
+.inpt:hover
+{
+	   background-color:#FFFFFF;
+}
+.inpt2:hover
+{
+	   background-color:#FFFFFF;
+}
+
+.button:hover
+{
+		background-color:#FFFFFF;
+		color: #5B5B5B;
+		
+}
+
+.fm
+{
+	padding-top:5%;
+}
+
+/* The Modal (background) */
+.w3-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  #img01 {
+    width: 100%;
+  }
+}
+
+
+#img01 {
+  margin: auto;
+  display: block;
+  width: 30%;
+  max-width: 700px;
+}
+
+#img01 {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
